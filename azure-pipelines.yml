@@ -27,7 +27,7 @@ steps:
 
 - powershell: |
    Write-Host "Robot Framework tests"
-   robot --pythonpath . -x outputxunit.xml TestCases.robot.
+   robot --pythonpath . -x outputxunit.xml Test.robot.
   displayName: 'Run Robot Framework Tests'
 
 - task: PublishTestResults@2
