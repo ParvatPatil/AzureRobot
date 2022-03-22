@@ -33,5 +33,6 @@ steps:
 - task: PublishTestResults@2
   displayName: 'Publish Test Results'
   continueOnError: true
+  condition: succeededOrFailed()
   inputs:
     testResultsFiles: outputxunit.xml
