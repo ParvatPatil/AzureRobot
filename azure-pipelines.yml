@@ -27,7 +27,7 @@ steps:
 
 - powershell: |
    Write-Host "Robot Framework tests"
-   robot --pythonpath . -x outputxunit.xml TestCases.robot.
+   robot --pythonpath . -x outputxunit.xml Test.robot.
   failOnStderr: true
   displayName: 'Run Robot Framework Tests'
   continueOnError: true
